@@ -5,7 +5,7 @@
 }
 
 #hero {
-  height: 320px;
+  height: 330px;
   width: 100%;
   background-image: url("../images/banner.jpg");
   background-repeat: no-repeat;
@@ -15,7 +15,7 @@
   font-weight: 600;
 }
 
-#hero .col-lg-3 a,
+#hero .col-lg-3 #apply-red-btn,
 form button,
 select {
   height: 47px;
@@ -26,10 +26,10 @@ select {
 }
 
 #our-priority li {
-  list-style-image: url("./images/bullet-style-1.svg");
+  list-style-image: url("../images/bullet-style-1.svg");
 }
 #what-get li {
-  list-style-image: url("./images/bullet-style-2.svg");
+  list-style-image: url("../images/bullet-style-2.svg");
 }
 
 .benefits .col-lg-5 img {

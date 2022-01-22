@@ -9,17 +9,37 @@
     <!-- bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- font awesome icons -->
+    <script src="https://kit.fontawesome.com/3b1cc6c86a.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/logo.png">
     <!-- embedded CSS -->
     <link rel="stylesheet" href="./css/list-property.css">
+    <link rel="stylesheet" href="./css/home.css">
 
-    <title>List Your Property | ClickToVisit</title>
+    <title>List Your Property</title>
+    <style>
+        #logo {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+        }
+        #logo img {
+            width: 65%;
+        }
+    </style>
 </head>
 
 <body>
     <!-- hero section -->
     <div class="d-lg-flex" id="hero">
         <div class="col-lg-3 text-white ms-lg-5 ms-4">
-            <h5 class="pt-4">ClickToVisit</h5>
+            <a class="navbar-brand h1 fs-3 d-flex align-items-center m-0 mt-2 text-white" href="#">
+                <div class="d-flex justify-content-center align-items-center bg-primary me-2" id="logo">
+                    <img src="./images/logo.png" class="d-inline-block align-center">
+                </div>
+                ClickToVisit.in
+            </a>
+
             <h1 class="mt-5 pt-2 lh-sm">List your <br>
                 <span style="color: #10B0A2;">apartment</span>
                 <br> on ClickToVisit
@@ -28,10 +48,10 @@
         </div>
         <div class="col-lg-5"></div>
         <div class="col-lg-3 d-flex align-items-end mt-lg-0 mt-3">
-            <a href="#applicationForm" class="btn w-100 fs-5 pt-2 text-white ms-lg-0 mx-4" id="apply-red-btn">Become A
-                Partner</a>
+            <a href="#applicationForm" class="btn w-100 fs-5 pt-2 text-white ms-lg-0 mx-4" id="apply-red-btn">Become A Partner</a>
         </div>
     </div>
+
     <!-- why -->
     <div class="d-lg-flex">
         <div class="col-lg-6 mx-4 ms-lg-5 mt-5">
@@ -136,6 +156,7 @@
             </ol>
         </div>
     </section>
+
     <!-- application form -->
     <div class="container-fluid mt-5">
         <section class="shadow m-lg-5 m-3 pb-3" id="applicationForm">
@@ -196,12 +217,59 @@
             </form>
         </section>
     </div>
+
     <!-- footer -->
-    <footer style="height: 200px; background:darkslategrey;"></footer>
+    <div class="container-fluid mt-5 pt-5 pb-5 footer" id="footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-3 col-xs-12 mb-5 about-company">
+                    <a href="#" class="mb-4 fs-2 text-decoration-none text-white">ClickToVisit.in</a>
+                    <div class="mt-2"></div>
+                    <a href="#" class="text-decoration-none text-muted">Privacy
+                        Policy</a>
+                    <div class="my-2"></div>
+                    <a href="./terms-and-conditions.html" class="text-decoration-none text-muted">Terms &
+                        Conditions</a>
+                </div>
+                <!-- <div class="col-md-3 col-xs-12 mb-5 company">
+                    <h4 class="mt-lg-0 mt-sm-3 mb-lg-4">Company</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="text-decoration-none text-white" href="/">Home</a></li>
+                        <li class="my-2"><a class="text-decoration-none text-white" href="/destination">Destinations</a></li>
+                        <li class="mb-2"><a class="text-decoration-none text-white" href="/about/">About Us</a></li>
+                        <li><a class="text-decoration-none text-white" href="/contact/">Contact Us</a></li>
+                    </ul>
+                </div> -->
+                <div class="col-md-3 col-xs-12 mb-5 contact">
+                    <h4 class="mt-lg-0 mt-sm-3 mb-lg-4">Contact</h4>
+                    <a href="tel:+917872836494" class="text-decoration-none text-white mb-2 d-block"><i class="fas fa-phone-alt me-3"></i>+91 78728 36494</a>
+                    <a href="mailto:contact@ClickToVisit.co.in" class="text-decoration-none text-white"><i
+                            class="fa fa-envelope-o me-3"></i>contact@ClickToVisit.co.in</a>
+                    <div class="mt-4">
+                        <a class="me-3 text-white" href="https://www.facebook.com/ClickToVisit.in/"
+                            target="_blank"><i class="fa fa-facebook-square me-1 fs-5"></i></a>
+                        <a class="me-3 text-white" href="https://www.linkedin.com/company/ClickToVisit/" target="_blank"><i class="fab fa-linkedin me-1 fs-5"></i></a>
+                        <a class="text-white" href="https://www.instagram.com/ClickToVisit.in/" target="_blank"><i class="fa fa-instagram fs-5"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-4 mb-lg-4">Location</h4>
+                    <p class="mb-2">Madhabnagar, Patharpratima</p>
+                    <p>743371, West Bengal</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p><small class="text-white-50">© 2021 ClickToVisit LLP. &nbsp; All Rights Reserved.</small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <!-- custom JS -->
-<script src="main.js"></script>
+<script src="./js/main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
