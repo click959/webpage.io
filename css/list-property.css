@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+#hero {
+  height: 320px;
+  width: 100%;
+  background-image: url("../images/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#hero .col-3 > h1 {
+  font-weight: 600;
+}
+
+#hero .col-lg-3 a,
+form button,
+select {
+  height: 47px;
+  border-radius: 10px;
+  background-image: linear-gradient(#1488cc, #2b32b2);
+  border: none;
+  margin-bottom: 2rem;
+}
+
+#our-priority li {
+  list-style-image: url("./images/bullet-style-1.svg");
+}
+#what-get li {
+  list-style-image: url("./images/bullet-style-2.svg");
+}
+
+.benefits .col-lg-5 img {
+  width: 15%;
+  margin-left: 9rem;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 2px solid rgba(151, 134, 134, 0.739);
+}
+
+@media (min-width: 525px) and (max-width: 815px) {
+  #why-img,
+  #what-img {
+    display: none !important;
+  }
+  #hero {
+    height: 355px !important;
+  }
+  #apply-red-btn {
+    width: 50% !important;
+  }
+}
+@media (max-width: 520px) {
+  .col-lg-5 .w-75,
+  .col-lg-6 .w-75 {
+    width: 100% !important;
+  }
+  .benefits .col-lg-5 img {
+    width: 28%;
+    margin-left: 7rem;
+  }
+  .d-flex button {
+    width: 90% !important;
+  }
+}
